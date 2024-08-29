@@ -5,6 +5,7 @@
 # Se debe imprimir el mínimo y máximo elementos del arreglo en dicho intervalo
 # A i v: se dará el carácter A seguido de un indice i y un valor v
 # Se debe sobreescribir el i-ésimo elemento del arreglo S con el valor v
-NM=input(""Por favor introduzca el número de enteros y el número de consultas"")
-N=NM.partition(' ')
-print(N)
+
+
+NM=input("Por favor introduzca el número de enteros y el número de consultas\n").split(" ")
+print(NM)
