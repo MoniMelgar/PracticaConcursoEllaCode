@@ -10,14 +10,12 @@ def Consultas():
     Consulta=input("Introduzca la consulta\nUtiliza espacios para separarlos entre sí\n").split()
     print (Consulta)
 
-NM=input("Por favor introduzca el número de enteros y el número de consultas\nUtiliza espacios para separarlos entre sí\n").split()
+NM=[int(x) for x in input("Por favor introduzca el número de enteros y el número de consultas\nUtiliza espacios para separarlos entre sí\n").split()]
 print(NM)
-S=input("Por favor introduzca el arreglo separado.\nUtiliza espacios para separarlos entre sí\n").split()
+S=[int(x) for x in input("Por favor introduzca el arreglo separado.\nUtiliza espacios para separarlos entre sí\n").split()]
 if NM[0]!=len(S):
-    X=input("El numero de enteros solicitados es diferente al dado\nPresiona cualquier tecla diferente a 1 para continuar\n")
-    if(X==1): 
-        sys.exit()
-    else:
-        Consultas()
+    x=input("El numero de enteros solicitados es diferente al dado\nPresiona cualquier tecla diferente a 1 para continuar\n")
+    if(x!='1'): 
+        Consultas()  
 else:
     Consultas()
